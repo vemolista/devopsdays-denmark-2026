@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        button, #value {
+            font-size: 2rem;
+            min-width: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="decrement">-</button>
+    <p id="value">0</p>
+    <button id="increment">+</button>
+
+    <script>
+        const valueEl = document.getElementById('value');
+        document.getElementById('increment').addEventListener('click', () => {
+            valueEl.textContent = Number(valueEl.textContent) + 1;
+        });
+        document.getElementById('decrement').addEventListener('click', () => {
+            valueEl.textContent = Number(valueEl.textContent) - 1;
+        });
+    </script>
+</body>
+</html>

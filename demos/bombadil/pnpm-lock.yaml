@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@antithesishq/bombadil':
+        specifier: ^0.3.2
+        version: 0.3.2
+
+packages:
+
+  '@antithesishq/bombadil@0.3.2':
+    resolution: {integrity: sha512-ATy1w9ZY5gbny1H8DFc7rxZitT7DLLLFDiGcRZe+8TQiUrV5tLO+IJGOVNNLp3RpCqjZqSsxGiKoQsx31ipV1g==}
+
+snapshots:
+
+  '@antithesishq/bombadil@0.3.2': {}
